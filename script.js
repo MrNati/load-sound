@@ -16,7 +16,7 @@ function bgSound() {
     //
     // Control sound functions e.g pause and unpause options
     // attached to the button. 
-    // Also change text from mute to unmute, vice versa.
+    // Also change text from pause to play, vice versa.
     //
 
     // get button using id
@@ -45,9 +45,9 @@ function bgSound() {
     // change the text of the audio
     function changeButton() {
         if (audio.paused) {
-            document.getElementById("bu1").innerHTML = "unmute";
+            document.getElementById("bu1").innerHTML = "play ";
         } else {
-            document.getElementById("bu1").innerHTML = "mute";
+            document.getElementById("bu1").innerHTML = "pause ";
         }
     }
 
